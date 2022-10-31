@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Market</title>
+    <link rel="stylesheet" type="text/css" href="design/style.css">
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/popup.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js">
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+         
+        $(window).scroll(function(){
+        if ($(this).scrollTop() > 100) {
+        $('.scrollup').fadeIn();
+        } else {
+        $('.scrollup').fadeOut();
+        }
+        });
+         
+        $('.scrollup').click(function(){
+        $("html, body").animate({ scrollTop: 0 }, 600);
+        return false;
+        });
+         
+        });
+        </script>
+</head>
+<body>
+    <a href="#" class="scrollup">Наверх</a>
+    <div class="header">
+         <div class="wrapper">
+                <header>
+                    <ul class="hdr-list">
+                        <li>
+                            <a href="index.html"><img src="img/logo.png" alt="logo"></a>
+                        </li>
+                        <li class="description">
+                            Интернет-магазин<br>женской одежды
+                        </li>
+                        <li>
+                            <a href="index.html" class="basket">Более <span class="fs18">5000</span> товаров <br>на
+                            сумму <span class="fs18">40 000 000</span> руб.</a>
+                        </li>
+                    </ul>
+                    <div class="info-block">
+                        <a href="index.html"><img src="img/group-mini1.png" alt="group"></a>
+                        <span class="tel">+7 (495) 614-27-62</span>
+                        <ul class="registration">
+                            <li>
+                                <a href="index.html">Войти</a>
+                                <div class="popup">
+                                    <h2 class="pop-title">Вход в Интернет-магазин</h2>
+                                    <span class="close"></span>
+                                    <p><input type="text" name="email" placeholder="Почта"></p>
+                                    <p><input type="text" name="password" placeholder="Пароль"></p>
+                                    <input type="button" value="Войти">
+                                    <label for="user-contract"><input type="checkbox" 
+                                        id="user-contract"> Пользовательское соглашение</label>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="index.html">Зарегистрироваться</a>
+                                <div class="popup">
+                                    <h2 class="pop-title">Регистрация</h2>
+                                    <span class="close"></span>
+                                    <p><input type="text" name="name" placeholder="Ваше имя*"></p>
+                                    <p><input type="text" name="email" placeholder="Ваша почта*"></p>
+                                    <p><input type="text" name="password" placeholder="Ваш пароль*"></p>
+                                    <input type="button" value="Зарегистрироваться">
+                                    <label for="user-contract"><input type="checkbox" 
+                                        id="user-contract"> Пользовательское соглашение</label>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </header>
+          </div>
+    </div>
+    <div class="nav">
+        <div class="nav-inner">
+            <div class="wrapper">
+                <nav>
+                    <ul>
+                        <li><a href="index.html">Главная</a></li>
+                        <li><a href="index.html">О фирме</a></li>
+                        <li>
+                            <a href="index.html">Каталог</a>
+                            <ul>
+                                <li><a href="index.html">Верхняя одежда</a></li>
+                                <li><a href="index.html">Нижнее бельё</a></li>
+                                <li><a href="index.html">Юбки</a></li>
+                                <li><a href="index.html">Брюки</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="index.html">Новости</a></li>
+                        <li>
+                            <a href="index.html">Статьи</a>
+                            <ul>
+                                <li><a href="index.html">Помощь</a></li>
+                                <li><a href="index.html">Правильный выбор</a></li>
+                                <li><a href="index.html">Сотрудничество</a></li>
+                                <li><a href="index.html">Франчайзинг</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="index.html">Оплата</a></li>
+                        <li><a href="index.html">Доставка</a></li>
+                        <li><a href="index.html">Контакты</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="wpapper">
+            <div class="sidebar">
+                <div class="products-name">
+                    <ul>
+                        <li><a href="index.html">Пальто</a></li>
+                        <li><a href="index.html">Плащ</a></li>
+                        <li><a href="index.html">Ветровка</a></li>
+                        <li><a class="active" href="index.html">Пуховик</a></li>
+                        <li><a href="index.html">Шуба</a></li>
+                    </ul>
+                </div>
+            <form action="/" method="post">
+                <div class="sb-block options">
+                    <h3 class="title">Подбор по параметрам</h3>
+                    <ul>
+                        <li><a href="index.html" class="china">Китай</a></li>
+                        <li><a href="index.html" class="china">41</a></li>
+                        <li><a href="index.html" class="reset">Сбросить фильтры</a></li>
+                    </ul>
+                </div>
+                <div class="sb-block country">
+                    <h3 class="title">Производитель</h3>
+                    <ul>
+                        <li><a href="index.html">Китай</a></li>
+                        <li><a href="index.html">Турция</a></li>
+                        <li><a href="index.html">Россия</a></li>
+                        <li><a href="index.html">Италия</a></li>
+                    </ul>
+                </div>
+                <div class="sb-block seasons">
+                    <h3 class="title">Сезон</h3>
+                    <ul>
+                        <li><label><input type="checkbox" name="winter" value="winter"> Зима</label></li>
+                        <li><label><input type="checkbox" name="spring" value="spring"> Весна</label></li>
+                        <li><label><input type="checkbox" name="summer" value="summer" checked> Лето</label></li>
+                        <li><label><input type="checkbox" name="autumn" value="autumn"> Осень</label></li>
+                    </ul>
+                </div>
+                <div class="sb-block size">
+                    <h3 class="title">Размер</h3>
+                    <ul>
+                        <li><label><input type="checkbox" name="30" value="30">30</label></li>
+                        <li><label><input type="checkbox" name="34" value="34">34</label></li>
+                        <li><label><input type="checkbox" name="38" value="38">38</label></li>
+                        <li><label><input type="checkbox" name="31" value="31" checked>31</label></li>
+                        <li><label><input type="checkbox" name="35" value="35">35</label></li>
+                        <li><label><input type="checkbox" name="39" value="39" checked>39</label></li>
+                        <li><label><input type="checkbox" name="32" value="32">32</label></li>
+                        <li><label><input type="checkbox" name="36" value="36" checked>36</label></li>
+                        <li><label><input type="checkbox" name="40" value="40">40</label></li>
+                        <li><label><input type="checkbox" name="33" value="33">33</label></li>
+                        <li><label><input type="checkbox" name="37" value="37">37</label></li>
+                        <li><label><input type="checkbox" name="41" value="41">41</label></li>
+                    </ul>
+                </div>
+                <div class="sb-block cost">
+                    <h3 class="title">Цена</h3>
+                    <ul>
+                        <li><a href="index.html">0-500</a></li>
+                        <li><a href="index.html">500-1000</a></li>
+                        <li><a href="index.html">1000-1500</a></li>
+                        <li><a href="index.html">1500-3000</a></li>
+                    </ul>
+                </div>
+                <div class="sb-block news">
+                    <h3 class="title">Новинка/скидка</h3>
+                    <ul>
+                        <li><label><input type="checkbox" name="stok" value="stok">Акции</label></li>
+                        <li><label><input type="checkbox" name="action" value="action">Новинки</label></li>
+                    </ul>
+                </div>
+                <div class="sb-block material">
+                    <h3 class="title">Материал</h3>
+                    <ul>
+                        <li><label><input type="checkbox" name="wool" value="wool">Шерсть</label></li>
+                        <li><label><input type="checkbox" name="cotton" value="cotton">Хлопок</label></li>
+                    </ul>
+                </div>
+                <div class="sb-block color">
+                    <h3 class="title">Цвет</h3>
+                    <ul>
+                        <li><label><input type="checkbox" name="pink" value="pink">Розовый</label></li>
+                        <li><label><input type="checkbox" name="blue" value="blue">Синий</label></li>
+                        <li><label><input type="checkbox" name="black" value="black">Чёрный</label></li>
+                        <li><label><input type="checkbox" name="white" value="white">Белый</label></li>
+                    </ul>
+                </div>
+                <div class="sb-block contacts">
+                    <ul>
+                        <li>
+                            <p>Россия г.Новосибирск,</p>
+                            <p>ул. Героев Труда 7</p><br>
+                        </li>
+                        <li>
+                            <p>ТЦ ДАФИ</p>
+                            <p>1 сектор, павильнон 122</p><br>
+                        </li>
+                        <li>
+                            <p>+7 (495) 614-41-14</p>
+                            <p>+7 (495) 614-41-15</p>
+                        </li>
+                        <li>
+                            <p><a href="javascript:window.open
+                            ('https://yandex.ru/maps/213/moscow/?ll=37.626862%2C55.741303&mode=whatshere&whatshere%5Bpoint%5D=37.625669%2C55.741008&whatshere%5Bzoom%5D=18.09&z=18',
+                            'maps', 'width=600,height=400')" class="location">
+                            <img src="img/scheme.png" alt="scheme" width=12px, height=12px>
+                            Схема проезда к магазину</a></p>
+                        </li>
+                    </ul>
+                </div>
+            </form>
+            </div>
+            <div class="right-col">
+                <div class="search-block">
+                    <form class="search-form" action="index.html" method="post">
+                        <input type="text" name="search" placeholder="Введите запрос...">
+                        <input type="button" name="btn-form" value="поиск">                        
+                    </form>
+                    <div class="bread-crumbs">
+                        <a href="#">главная</a> <span> / пуховик</span>
+                    </div>
+                </div>
+                <ul class="product-list">
+                    <li>
+                        <img src="img/furi1.png" alt="image">
+                        <div class="product">
+                        <p>Пуховик</p>
+                        <p>Арт. SD-315H</p>
+                            <div class="price-block">
+                                <p class="old-price">6000 руб.</p>
+                                <p class="price">5000 руб.</p>
+                            </div>
+                        </div>
+                            <ul class="special">
+                            <li class="red">новинка</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <img src="img/furi2.png" alt="image">
+                        <div class="product">
+                        <p>Пуховик</p>
+                        <p>Арт. SD-245H</p><br>
+                            <div class="price-block">
+                                <p class="price">5000 руб.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/furi3.png" alt="image">
+                        <div class="product">
+                        <p>Пуховик</p>
+                        <p>Арт. VD-145H</p><br>
+                            <div class="price-block">
+                                <p class="price">9000 руб.</p>
+                            </div>
+                        </div>
+                            <ul class="special">
+                            <li class="green">скидка 5%</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <img src="img/furi4.png" alt="image">
+                        <div class="product">
+                        <p>Пуховик</p>
+                        <p>Арт. VD-147H</p><br>
+                            <div class="price-block">
+                                <p class="price">10000 руб.</p>
+                            </div>
+                        </div>
+                            <ul class="special">
+                          <li class="red">новинка</li>
+                        </ul>            
+                    </li>
+                    <li>
+                        <img src="img/furi5.png" alt="image">
+                        <div class="product">
+                        <p>Пуховик</p>
+                        <p>Арт. SA-343H</p><br>
+                            <div class="price-block">
+                                <p class="price">7000 руб.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="activity">
+                        <img src="img/furi6.png" alt="image">
+                        <div class="product">
+                        <p>Пуховик</p>
+                        <p>Арт. VD-149H</p>
+                            <div class="price-block">
+                                <p class="old-price">7000 руб.</p>
+                                <p class="price">6000 руб.</p>
+                            </div>
+                        </div>
+                            <ul class="special">
+                            <li class="green">скидка 5%</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <img src="img/furi7.png" alt="image">
+                        <div class="product">
+                        <p>Пуховик</p>
+                        <p>Арт. SD-468H</p>
+                            <div class="price-block">
+                                <p class="old-price">7000 руб.</p>
+                                <p class="price">5500 руб.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/furi8.png" alt="image">
+                        <div class="product">
+                        <p>Пуховик</p>
+                        <p>Арт. SD-452H</p><br>
+                            <div class="price-block">
+                                <p class="price">12000 руб.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/furi9.png" alt="image">
+                        <div class="product">
+                        <p>Пуховик</p>
+                        <p>Арт. JD-745H</p><br>
+                            <div class="price-block">
+                                <p class="price">8000 руб.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/furi10.png" alt="image">
+                        <div class="product">
+                        <p>Пуховик</p>
+                        <p>Арт. JD-736H</p>
+                            <div class="price-block">
+                                <p class="old-price">7000 руб.</p>
+                                <p class="price">6000 руб.</p>
+                            </div>
+                        </div>
+                            <ul class="special">
+                            <li class="red">новинка</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <img src="img/furi11.png" alt="image">
+                        <div class="product">
+                        <p>Пуховик</p>
+                        <p>Арт. SB-247H</p>
+                            <div class="price-block">
+                                <p class="old-price">9000 руб.</p>
+                                <p class="price">7500 руб.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/furi12.png" alt="image">
+                        <div class="product">
+                        <p>Пуховик</p>
+                        <p>Арт. SE-625H</p>
+                            <div class="price-block">
+                                <p class="old-price">9500 руб.</p>
+                                <p class="price">8000 руб.</p>
+                            </div>
+                        </div>
+                            <ul class="special">
+                            <li class="red">новинка</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <img src="img/furi13.png" alt="image">
+                        <div class="product">
+                        <p>Пуховик</p>
+                        <p>Арт. FD-540H</p>
+                            <div class="price-block">
+                                <p class="old-price">5000 руб.</p>
+                                <p class="price">4250 руб.</p>
+                            </div>
+                        </div>
+                        <ul class="special">
+                            <li class="red">новинка</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <img src="img/furi14.png" alt="image">
+                        <div class="product">
+                        <p>Пуховик</p>
+                        <p>Арт. SD-445H</p>
+                            <div class="price-block">
+                                <p class="old-price">12000 руб.</p>
+                                <p class="price">10000 руб.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <img src="img/furi15.png" alt="image">
+                        <div class="product">
+                        <p>Пуховик</p>
+                        <p>Арт. SW-931H</p><br>
+                            <div class="price-block">
+                                <p class="price">12000 руб.</p>
+                            </div>
+                        </div>
+                            <ul class="special">
+                            <li class="green">скидка 5%</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <img src="img/furi16.png" alt="image">
+                        <div class="product">
+                        <p>Пуховик</p>
+                        <p>Арт. SB-285H</p>
+                            <div class="price-block">
+                                <p class="old-price">8000 руб.</p>
+                                <p class="price">7000 руб.</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="pager">
+                    <li><a href="index.html">« предыдущая</a></li>
+                    <li><a class="active" href="index.html">1</a></li>
+                    <li><a href="index.html">2</a></li>
+                    <li><a href="index.html">3</a></li>
+                    <li><a href="index.html">следущая »</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="wrapper">
+            <footer>
+                <div class="right-footb">
+                    <ul>
+                        <li>
+                            <p>Россия, г. Новосибирск</p>
+                            <p>ул. Лютая 16</p>
+                        </li>
+                        <li>
+                            <p>e-mail: <a href="mailto:alexan2r@rambler.ru">alexan2r@rambler.ru</a> </p>
+                            <p>тел.<a href="tel:+38(057)555-10-55"> +7(499)555-10-55</a></p>
+                        </li>
+                    </ul>
+                    <a href="#">Условия использования сайта</a>
+                </div>
+                <div class="left-footb">
+                    <a href="#"><img src="img/logo.png" alt="logo" width=45px, height=45px ></a>
+                    <p>© Милена 2020 Все права защищены</p>
+                    <p>© создание сайтов <a href="#">Александр Лобанов</a></p>
+                </div>                
+            </footer>
+        </div>
+    </div>
+</body>
+</html>
